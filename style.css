@@ -1,24 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+html,
 body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
 }
 
-h2 {
-  margin: 10px 0;
-}
-.row {
-  width: 100%;
-}
-.col-3 {
-  width: 30%;
-}
-.col-7 {
-  width: 70%;
-}
-#nav-bar {
+#navbar {
   position: fixed;
   min-width: 290px;
   top: 0px;
@@ -29,82 +18,81 @@ h2 {
   border-color: rgba(0, 22, 22, 0.4);
 }
 
-#nav-bar ol {
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
   height: 88%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
-#nav-bar li {
-  border-top: black 1px solid;
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
   list-style: none;
-  padding: 15px;
+  position: relative;
+  width: 100%;
 }
-#nav-bar ol li a {
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
   color: #4d4e53;
   text-decoration: none;
-  font-size: 15px;
+  cursor: pointer;
 }
+
 #main-doc {
   position: absolute;
-  margin-left: 330px;
-}
-#main-doc p {
-  padding: 10px;
-  font-size: 20px;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
 }
 
-#main-doc ul li {
-  padding: 5px;
-  font-size: 20px;
-}
-
-.section-info {
+section article {
   color: #4d4e53;
   margin: 15px;
+  font-size: 0.96em;
 }
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
 code {
   display: block;
-  margin: 10px;
-  padding: 15px;
-  font-size: 15px;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
   background-color: lightgrey;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
 }
-/* @media (max-width: 768px) {
-  #nav-bar {
-    background-color: white;
-    position: absolute;
-    width: 98%;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    max-height: 277px;
-    z-index: 1;
-
-    border: 2px solid black;
-    overflow: hidden;
-  }
-  #main-doc {
-    position: relative;
-    left: 0;
-    width: 93%;
-    margin: 300px 0 0 20px;
-  }
-
-  #title {
-    text-align: center;
-  }
-} */
 
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
-  #nav-bar ol {
+  #navbar ul {
     border: 1px solid;
     height: 207px;
   }
 
-  #nav-bar {
+  #navbar {
     background-color: white;
     position: absolute;
     top: 0;
